@@ -1,1522 +1,706 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Levelnext Fitness – Next Level Gym in Maravaneri, Salem</title>
-  <meta name="description" content="Levelnext Fitness – Premium gym in Maravaneri, Salem. Achieve your next level with expert trainers, steam bath, diet plans, and elite equipment. Join now!" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Schema.org Local Business JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HealthClub",
-    "name": "Levelnext Fitness",
-    "image": "https://levelnextfitness.in/og-image.jpg",
-    "description": "Premium fitness gym in Maravaneri, Salem offering personal training, steam bath, diet plans, and more.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1/2, 1st Cross St, Maravaneri",
-      "addressLocality": "Salem",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "636009",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 11.6643,
-      "longitude": 78.1460
-    },
-    "telephone": "+919894529205",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "05:30",
-        "closes": "22:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "07:00",
-        "closes": "12:00"
-      }
-    ],
-    "priceRange": "₹₹",
-    "url": "https://levelnextfitness.in"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Maharaja MSM – Purity in Every Grain | Premium Salt Manufacturer, Vallioor</title>
+<meta name="description" content="Maharaja MSM is a premier salt manufacturer based in Vallioor, Tamil Nadu. Supplying high-purity iodized, refined, and industrial salt for food processing, chemical, domestic, and de-icing industries.">
+<meta name="keywords" content="salt manufacturer Vallioor, industrial salt Tamil Nadu, food grade salt, iodized salt supplier, bulk salt India, Maharaja MSM">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Maharaja MSM",
+  "description": "Premier salt manufacturer supplying high-purity iodized and refined salt for food processing, chemical, domestic, and de-icing industries.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "102/E/1 Ramalashmi Nagar",
+    "addressLocality": "Vallioor",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "telephone": "+919787636261",
+  "industry": "Salt Manufacturing",
+  "areaServed": "India"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #00c5ff;
+    --accent-dark: #0099cc;
+    --accent-light: #b3eeff;
+    --accent-pale: #e6f9ff;
+    --accent-text: #007ba0;
+    --white: #FFFFFF;
+    --off-white: #f0fbff;
+    --gray-light: #d0eef8;
+    --gray-mid: #a0d4e8;
+    --text-dark: #0a2030;
+    --text-muted: #2c5f78;
   }
-  </script>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    font-weight: 500;
+  }
+  h1, h2, h3, h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; }
+  p, li, .section-body, .step-content p, .feature-card p, .cert-sub, .product-card-body p {
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  .section-body, .text-muted {
+    color: var(--text-muted);
+    font-weight: 500;
+  }
 
-  <style>
-    :root {
-      --navy: #0a192f;
-      --navy-light: #112240;
-      --navy-glow: #1e3a5f;
-      --accent: #64ffda;
-      --accent-dim: rgba(100, 255, 218, 0.15);
-      --bg: #0a192f;
-      --bg2: #0f2a3f;
-      --bg3: #112240;
-      --glass: rgba(17, 34, 64, 0.6);
-      --glass-border: rgba(100, 255, 218, 0.12);
-      --text: #e6f1ff;
-      --muted: #8892b0;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      overflow-x: hidden;
-    }
-
-    /* ── NOISE TEXTURE OVERLAY ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.4;
-    }
-
-    /* ── NAVBAR ── */
-    #navbar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      padding: 0 2rem;
-      height: 68px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(10, 25, 47, 0.85);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border-bottom: 1px solid var(--glass-border);
-      transition: background 0.3s;
-    }
-
-    .nav-logo {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: 1.35rem;
-      letter-spacing: -0.5px;
-      color: var(--text);
-    }
-    .nav-logo span { color: var(--accent); }
-
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 600;
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--accent); }
-
-    .nav-cta {
-      background: var(--accent);
-      color: #0a192f;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.55rem 1.3rem;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .nav-cta:hover { background: #8effe6; transform: translateY(-1px); }
-
-    /* Hamburger */
-    #menu-toggle { display: none; background: none; border: none; cursor: pointer; }
-    #menu-toggle span {
-      display: block; width: 24px; height: 2px;
-      background: var(--text); margin: 5px 0;
-      transition: all 0.3s;
-    }
-    #mobile-menu {
-      display: none;
-      position: fixed;
-      top: 68px; left: 0; right: 0;
-      background: rgba(10, 25, 47, 0.98);
-      backdrop-filter: blur(20px);
-      padding: 1.5rem 2rem 2rem;
-      border-bottom: 1px solid var(--glass-border);
-      z-index: 99;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-    #mobile-menu.open { display: flex; }
-    #mobile-menu a {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 1px solid var(--glass-border);
-      padding-bottom: 0.8rem;
-    }
-    #mobile-menu a:last-child { border-bottom: none; }
-    #mobile-menu a:hover { color: var(--accent); }
-
-    /* ── HERO ── */
-    #home {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-top: 68px;
-      position: relative;
-    }
-
-    .hero-image-side {
-      position: relative;
-      overflow: hidden;
-      min-height: 500px;
-    }
-
-    .hero-img-placeholder {
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(135deg, #0a192f 0%, #0d2240 50%, #112240 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-img-placeholder::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 40% at 60% 50%, rgba(100, 255, 218, 0.08) 0%, transparent 70%),
-        repeating-linear-gradient(
-          -55deg,
-          transparent,
-          transparent 30px,
-          rgba(255,255,255,0.01) 30px,
-          rgba(255,255,255,0.01) 31px
-        );
-    }
-
-    .hero-img-placeholder::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, transparent 70%, var(--bg) 100%);
-    }
-
-    .hero-img-icon {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-    }
-    .hero-img-icon i {
-      font-size: 8rem;
-      color: rgba(100, 255, 218, 0.12);
-      display: block;
-    }
-    .hero-img-label {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.15);
-      margin-top: 1rem;
-    }
-
-    .hero-diagonal {
-      position: absolute;
-      top: 0; left: 0;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-    }
-
-    .hero-badge {
-      position: absolute;
-      bottom: 2.5rem;
-      left: 2.5rem;
-      background: rgba(100, 255, 218, 0.1);
-      border: 1px solid rgba(100, 255, 218, 0.25);
-      backdrop-filter: blur(10px);
-      border-radius: 8px;
-      padding: 0.75rem 1.2rem;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .hero-badge i { color: var(--accent); font-size: 1rem; }
-    .hero-badge-text { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; color: var(--accent); }
-    .hero-badge-sub { font-size: 0.65rem; color: rgba(100, 255, 218, 0.6); font-family: 'DM Sans', sans-serif; }
-
-    .hero-content-side {
-      display: flex;
-      align-items: center;
-      padding: 5rem 4rem 5rem 5rem;
-      position: relative;
-    }
-
-    .hero-content-side::before {
-      content: '';
-      position: absolute;
-      top: 15%;
-      right: 10%;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(100, 255, 218, 0.06) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-eyebrow {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: inline-block;
+  /* NAV */
+  nav, .nav-inner, .nav-links, .nav-links a, .nav-cta, .hamburger, .mobile-dropdown a {
+    font-family: 'DM Sans', sans-serif;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--gray-light);
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.06); }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2rem; height: 64px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'DM Sans', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--text-dark); line-height: 1.1; }
+  .logo-sub { font-size: 0.65rem; font-family: 'DM Sans', sans-serif; font-weight: 700; color: var(--accent-text); letter-spacing: 0.1em; text-transform: uppercase; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.875rem; font-weight: 600; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent); color: white;
+    border: none; padding: 0.5rem 1.25rem;
+    border-radius: 6px; font-size: 0.875rem; font-weight: 700;
+    cursor: pointer; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); }
+  
+  /* HAMBURGER */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 6px 4px;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    transition: background 0.2s;
+  }
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+    background: var(--text-dark);
+    border-radius: 2px;
+    transition: 0.2s;
+  }
+  @media (max-width: 560px) {
+    .hamburger {
+      gap: 3px;
+      padding: 5px 3px;
       width: 28px;
+      height: 28px;
+    }
+    .hamburger span {
+      width: 18px;
       height: 2px;
-      background: var(--accent);
     }
+  }
+  
+  /* MOBILE DROPDOWN */
+  .mobile-dropdown {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--accent-light);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    z-index: 999;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .mobile-dropdown a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--gray-light);
+    display: block;
+    transition: color 0.2s;
+  }
+  .mobile-dropdown a:last-child {
+    border-bottom: none;
+  }
+  .mobile-dropdown a:hover {
+    color: var(--accent);
+    padding-left: 4px;
+  }
+  .mobile-dropdown.open {
+    display: flex;
+  }
+  
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-bg-image {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(125deg, rgba(255,255,255,0.90) 0%, rgba(0,197,255,0.25) 100%);
+  }
+  .hero-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    padding-top: 80px;
+  }
+  .hero-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s ease forwards;
+  }
+  .hero-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.4s ease forwards;
+  }
+  .hero-title em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 800;
+  }
+  .hero-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.6s ease forwards;
+  }
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.8s ease forwards;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.875rem 2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: 'DM Sans', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .btn-primary:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,197,255,0.3);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.875rem 2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-outline:hover {
+    background: rgba(106,1,181,0.1);
+    border-color: var(--accent-dark);
+    font-weight: 700;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 1s ease forwards;
+  }
+  .hero-stat-num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+  }
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s ease forwards;
+  }
+  .scroll-indicator span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: var(--accent-light);
+    position: relative;
+    overflow: hidden;
+  }
+  .scroll-line::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    animation: scrollAnim 2s ease infinite;
+  }
+  @keyframes scrollAnim {
+    to { top: 200%; }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 
-    .hero-headline {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: clamp(2.6rem, 4.5vw, 4rem);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-      margin-bottom: 1.5rem;
-      color: #fff;
-    }
-    .hero-headline .accent { color: var(--accent); }
-    .hero-headline .outline-text {
-      -webkit-text-stroke: 1.5px rgba(255,255,255,0.2);
-      color: transparent;
-    }
+  section { padding: 6rem 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+  }
+  .section-body {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 560px;
+    font-weight: 500;
+  }
+  
+  /* PRODUCT CARDS WITH ATTRACTIVE SALT IMAGES */
+  .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .product-card {
+    background: var(--white); border: 1px solid var(--accent-light);
+    border-radius: 16px; overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  .product-card:hover { transform: translateY(-8px); box-shadow: 0 24px 48px rgba(0,197,255,0.15); }
+  .product-img {
+    width: 100%; height: 200px; object-fit: cover;
+    display: block; transition: transform 0.4s ease;
+  }
+  .product-card:hover .product-img { transform: scale(1.02); }
+  .product-card-body { padding: 1.8rem 1.5rem; }
+  .product-card-body h3 { font-family: 'DM Sans', sans-serif; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.4rem; color: var(--text-dark); }
+  .product-card-body p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem; font-weight: 500; }
+  .product-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .product-tag {
+    font-size: 0.68rem; padding: 0.2rem 0.6rem;
+    background: var(--off-white); border: 1px solid var(--accent-light);
+    border-radius: 4px; color: var(--accent);
+    letter-spacing: 0.05em; text-transform: uppercase;
+    font-weight: 700;
+  }
 
-    .hero-sub {
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.7;
-      max-width: 400px;
-      margin-bottom: 2.5rem;
-      font-weight: 400;
-    }
-
-    .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #0a192f;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.9rem 2.2rem;
-      border-radius: 4px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s;
-      border: none;
-      cursor: pointer;
-    }
-    .btn-primary:hover {
-      background: #8effe6;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(100, 255, 218, 0.25);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-      padding: 0.9rem 1.8rem;
-      border-radius: 4px;
-      text-decoration: none;
-      border: 1px solid var(--glass-border);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s;
-    }
-    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
-
-    .hero-stats {
-      display: flex;
-      gap: 2.5rem;
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--glass-border);
-    }
-    .stat-num {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.72rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-top: 0.3rem;
-      font-weight: 500;
-    }
-
-    /* ── SECTION SHARED ── */
-    section { position: relative; z-index: 1; }
-    .section-pad { padding: 6rem 2rem; }
-    .container { max-width: 1200px; margin: 0 auto; }
-
-    .section-tag {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.8rem;
-    }
-    .section-title {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: clamp(2rem, 3.5vw, 2.8rem);
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-    .section-title .accent { color: var(--accent); }
-
-    /* ── WHY US ── */
-    #about { background: var(--bg2); }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .feature-card {
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      border-radius: 12px;
-      padding: 1.8rem;
-      transition: all 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-    .feature-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(to right, var(--accent), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(100, 255, 218, 0.2); }
-    .feature-card:hover::before { opacity: 1; }
-
-    .feature-icon {
-      width: 46px; height: 46px;
-      background: rgba(100, 255, 218, 0.1);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-    .feature-icon i { color: var(--accent); font-size: 1.1rem; }
-    .feature-title {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-      color: #fff;
-    }
-    .feature-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
-
-    /* ── PACKAGES / PRICING ── */
-    #packages { background: var(--bg); }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-      align-items: center;
-    }
-
-    .pricing-card {
-      background: var(--bg3);
-      border: 1px solid var(--glass-border);
-      border-radius: 16px;
-      padding: 2.5rem 2rem;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
-      cursor: pointer;
-    }
-    .pricing-card:hover { border-color: rgba(100, 255, 218, 0.3); }
-
-    .pricing-card.featured {
-      border-color: var(--accent);
-      background: linear-gradient(145deg, #0d2240 0%, #112240 100%);
-      transform: scale(1.04);
-      box-shadow: 0 0 60px rgba(100, 255, 218, 0.08);
-    }
-    .pricing-card.featured:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 80px rgba(100, 255, 218, 0.15);
-    }
-    .pricing-card:not(.featured):hover { transform: scale(1.02); }
-
-    .pricing-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(100, 255, 218, 0.06) 0%, transparent 70%);
-      transition: opacity 0.3s;
-    }
-    .pricing-card:hover::before { opacity: 1; }
-
-    .badge-best {
-      position: absolute;
-      top: -1px; right: 1.5rem;
-      background: var(--accent);
-      color: #0a192f;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.62rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.9rem;
-      border-radius: 0 0 8px 8px;
-    }
-
-    .plan-name {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.8rem;
-    }
-    .plan-price {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: 3rem;
-      color: #fff;
-      line-height: 1;
-    }
-    .plan-price sup { font-size: 1.2rem; vertical-align: super; color: var(--accent); }
-    .plan-price span { font-size: 0.9rem; color: var(--muted); font-weight: 400; }
-    .featured .plan-price { color: var(--accent); }
-
-    .plan-desc {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin: 0.7rem 0 1.5rem;
-      line-height: 1.5;
-    }
-
-    .plan-perks {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      margin-bottom: 2rem;
-    }
-    .plan-perks li {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.83rem;
-      color: #ccc;
-      transition: color 0.2s;
-    }
-    .plan-perks li i { color: var(--accent); font-size: 0.75rem; min-width: 14px; }
-    .plan-perks li.inactive { color: #444; }
-    .plan-perks li.inactive i { color: #2a4a6e; }
-
-    .quick-look {
-      position: absolute;
-      inset: 0;
-      background: rgba(10, 25, 47, 0.96);
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 2rem;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease;
-      pointer-events: none;
-    }
-    .pricing-card:hover .quick-look {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .quick-look-title {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .quick-look-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: rgba(100, 255, 218, 0.3);
-    }
-    .quick-look ul {
-      list-style: none;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.7rem;
-    }
-    .quick-look ul li {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 0.88rem;
-      color: #ddd;
-      padding-bottom: 0.7rem;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .quick-look ul li:last-child { border-bottom: none; }
-    .quick-look ul li i { color: var(--accent); font-size: 0.9rem; min-width: 18px; text-align: center; }
-    .quick-look ul li.unavailable { color: #444; }
-    .quick-look ul li.unavailable i { color: #2a4a6e; }
-
-    .plan-btn {
-      width: 100%;
-      text-align: center;
-      padding: 0.85rem;
-      border-radius: 8px;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: all 0.2s;
-      display: block;
-    }
-    .plan-btn-outline {
-      border: 1px solid var(--glass-border);
-      color: var(--text);
-    }
-    .plan-btn-outline:hover { border-color: var(--accent); color: var(--accent); }
-    .plan-btn-filled {
-      background: var(--accent);
-      color: #0a192f;
-      border: none;
-    }
-    .plan-btn-filled:hover { background: #8effe6; box-shadow: 0 4px 20px rgba(100, 255, 218, 0.25); }
-
-    /* ── REVIEWS ── */
-    #reviews { background: var(--bg2); overflow: hidden; }
-
-    .reviews-track-wrapper {
-      overflow: hidden;
-      margin-top: 3rem;
-      position: relative;
-    }
-    .reviews-track-wrapper::before,
-    .reviews-track-wrapper::after {
-      content: '';
-      position: absolute;
-      top: 0; bottom: 0;
-      width: 80px;
-      z-index: 2;
-      pointer-events: none;
-    }
-    .reviews-track-wrapper::before { left: 0; background: linear-gradient(to right, var(--bg2), transparent); }
-    .reviews-track-wrapper::after { right: 0; background: linear-gradient(to left, var(--bg2), transparent); }
-
-    .reviews-track {
-      display: flex;
-      gap: 1.5rem;
-      width: max-content;
-      animation: scroll-reviews 30s linear infinite;
-    }
-    .reviews-track:hover { animation-play-state: paused; }
-
-    @keyframes scroll-reviews {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    .review-card {
-      background: var(--bg3);
-      border: 1px solid var(--glass-border);
-      border-radius: 14px;
-      padding: 1.8rem;
-      width: 320px;
-      flex-shrink: 0;
-      transition: border-color 0.3s;
-    }
-    .review-card:hover { border-color: rgba(100, 255, 218, 0.2); }
-
-    .review-stars { color: var(--accent); font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 0.8rem; }
-    .review-text {
-      font-size: 0.88rem;
-      color: #bbb;
-      line-height: 1.65;
-      margin-bottom: 1.2rem;
-      font-style: italic;
-    }
-    .review-author {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .review-avatar {
-      width: 38px; height: 38px;
-      border-radius: 50%;
-      background: rgba(100, 255, 218, 0.15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: 0.85rem;
-      color: var(--accent);
-      flex-shrink: 0;
-    }
-    .review-name {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.85rem;
-      color: #fff;
-    }
-    .review-meta { font-size: 0.72rem; color: var(--muted); }
-
-    /* ── CONTACT ── */
-    #contact { background: var(--bg); }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 4rem;
-      margin-top: 3rem;
-      align-items: start;
-    }
-
-    .contact-info-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1.8rem;
-    }
-    .contact-icon {
-      width: 44px; height: 44px;
-      background: rgba(100, 255, 218, 0.1);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .contact-icon i { color: var(--accent); font-size: 1rem; }
-    .contact-label {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.78rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.2rem;
-    }
-    .contact-value {
-      font-size: 0.92rem;
-      color: #ccc;
-      line-height: 1.5;
-    }
-    .contact-value a { color: #ccc; text-decoration: none; transition: color 0.2s; }
-    .contact-value a:hover { color: var(--accent); }
-
-    .contact-form {
-      background: var(--bg3);
-      border: 1px solid var(--glass-border);
-      border-radius: 16px;
-      padding: 2.5rem;
-    }
-    .form-title {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: 1.2rem;
-      color: #fff;
-      margin-bottom: 1.5rem;
-    }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .form-group { margin-bottom: 1.2rem; }
-    .form-group label {
-      display: block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--muted);
-      margin-bottom: 0.4rem;
-    }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--glass-border);
-      border-radius: 8px;
-      padding: 0.75rem 1rem;
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.88rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus { border-color: var(--accent); }
-    .form-group select option { background: #112240; }
-    .form-group textarea { resize: vertical; min-height: 90px; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: #051020;
-      border-top: 1px solid var(--glass-border);
-      padding: 3rem 2rem 2rem;
-    }
-    .footer-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 2rem;
-    }
-    .footer-brand-name {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 800;
-      font-size: 1.4rem;
-      color: #fff;
-      margin-bottom: 0.8rem;
-    }
-    .footer-brand-name span { color: var(--accent); }
-    .footer-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; max-width: 260px; }
-    .footer-social { display: flex; gap: 0.75rem; margin-top: 1.2rem; }
-    .social-icon {
-      width: 36px; height: 36px;
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .social-icon:hover { background: rgba(100, 255, 218, 0.1); border-color: var(--accent); color: var(--accent); }
-
-    .footer-col-title {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.78rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 0.6rem; }
-    .footer-links a {
-      font-size: 0.83rem;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: var(--text); }
-    .footer-hours-item {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-    .footer-hours-item span:last-child { color: #aaa; }
-
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--glass-border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .footer-copy { font-size: 0.78rem; color: #4a5a7a; }
-
-    /* ── ANNOUNCEMENT TICKER ── */
-    .ticker {
-      background: var(--accent);
-      color: #0a192f;
-      padding: 0.5rem 0;
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
-    }
-    .ticker-inner {
-      display: flex;
-      width: max-content;
-      animation: ticker 20s linear infinite;
-    }
-    @keyframes ticker {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .ticker-item {
-      white-space: nowrap;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0 2rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .ticker-item i { font-size: 0.65rem; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      #home { grid-template-columns: 1fr; }
-      .hero-image-side { min-height: 280px; order: -1; }
-      .hero-content-side { padding: 3rem 1.5rem; }
-      .hero-img-placeholder::after { background: linear-gradient(to bottom, transparent 60%, var(--bg) 100%); }
-      .contact-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .form-row { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 700px) {
-      .nav-links, .nav-cta { display: none; }
-      #menu-toggle { display: block; }
-      .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
-      .pricing-grid { grid-template-columns: 1fr; }
-      .pricing-card.featured { transform: scale(1); }
-      .pricing-card.featured:hover { transform: scale(1.02); }
-    }
-    @media (min-width: 701px) {
-      #mobile-menu { display: none !important; }
-    }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-up {
-      opacity: 0;
-      animation: fadeUp 0.7s ease forwards;
-    }
-    .delay-1 { animation-delay: 0.15s; }
-    .delay-2 { animation-delay: 0.3s; }
-    .delay-3 { animation-delay: 0.45s; }
-    .delay-4 { animation-delay: 0.6s; }
-
-    @keyframes limePulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.2); }
-      50% { box-shadow: 0 0 0 12px rgba(100, 255, 218, 0); }
-    }
-    .btn-primary { animation: limePulse 2.5s ease infinite; }
-    .btn-primary:hover { animation: none; }
-  </style>
+  /* SALT GALLERY SECTION */
+  .salt-gallery {
+    background: var(--off-white);
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .gallery-item {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px rgba(0,197,255,0.15);
+  }
+  .gallery-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+  }
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.03);
+  }
+  .gallery-caption {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-text);
+    background: white;
+    border-top: 1px solid var(--accent-light);
+  }
+  .about-section { background: var(--off-white); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .process-steps { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0; }
+  .process-step {
+    display: flex; gap: 1.25rem; align-items: flex-start;
+    padding: 1.25rem 0; border-bottom: 1px solid var(--gray-light);
+  }
+  .process-step:last-child { border-bottom: none; }
+  .step-num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem; font-weight: 800;
+    color: var(--accent-light); line-height: 1;
+    min-width: 2.5rem;
+    transition: color 0.3s;
+  }
+  .process-step:hover .step-num { color: var(--accent); }
+  .step-content h4 { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 800; margin-bottom: 0.3rem; color: var(--text-dark); }
+  .step-content p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; font-weight: 500; }
+  .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1rem; }
+  .feature-card {
+    background: var(--white);
+    border: 1px solid var(--accent-light);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,197,255,0.1); }
+  .feature-icon { font-size: 1.4rem; margin-bottom: 0.6rem; }
+  .feature-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 800; margin-bottom: 0.3rem; color: var(--text-dark); }
+  .feature-card p { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; font-weight: 500; }
+  
+  /* selector, quality, etc. */
+  .selector-section { background: var(--white); padding: 6rem 2rem; }
+  .industry-tabs { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 2.5rem 0; }
+  .industry-tab { padding: 0.7rem 1.5rem; border: 1px solid var(--gray-light); border-radius: 100px; background: transparent; color: var(--text-muted); font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.25s; }
+  .industry-tab:hover { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+  .industry-tab.active { background: var(--accent); border-color: var(--accent); color: white; font-weight: 800; }
+  .grade-result { background: var(--off-white); border: 1px solid var(--gray-light); border-radius: 16px; padding: 2.5rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; transition: opacity 0.4s; }
+  .grade-col h3 { font-family: 'DM Sans', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--accent); margin-bottom: 1rem; }
+  .grade-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .grade-col ul li { font-size: 0.82rem; color: var(--text-dark); display: flex; align-items: center; gap: 0.5rem; font-weight: 500; }
+  .grade-col ul li::before { content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+  .grade-badge { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(0,197,255,0.1); border: 1px solid rgba(0,197,255,0.3); border-radius: 4px; font-size: 0.7rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; font-weight: 700; }
+  .quality-section { background: var(--off-white); }
+  .trust-bar { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 2.5rem 0; }
+  .cert-card { background: var(--white); border: 1px solid var(--accent-light); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 180px; transition: transform 0.25s, box-shadow 0.25s; cursor: pointer; position: relative; overflow: hidden; }
+  .cert-card::after { content: ''; position: absolute; bottom: 0; left: 0; height: 3px; width: 0; background: var(--accent); transition: width 0.4s ease; }
+  .cert-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,197,255,0.1); }
+  .cert-card:hover::after { width: 100%; }
+  .cert-logo { width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.05em; flex-shrink: 0; background: var(--accent-pale); color: var(--accent); }
+  .cert-name { font-size: 0.85rem; font-weight: 800; color: var(--text-dark); }
+  .cert-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; font-weight: 500; }
+  .cert-dl { margin-left: auto; font-size: 0.72rem; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 4px; white-space: nowrap; font-weight: 600; }
+  .quality-metrics { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; margin-top: 2.5rem; }
+  .metric-card { background: var(--white); border: 1px solid var(--accent-light); border-radius: 12px; padding: 1.5rem; text-align: center; transition: transform 0.25s, box-shadow 0.25s; }
+  .metric-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,197,255,0.1); }
+  .metric-num { font-family: 'DM Sans', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; }
+  .metric-unit { font-size: 0.85rem; color: var(--accent); font-weight: 600; }
+  .metric-label { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.4rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+  .logistics-section { background: var(--white); }
+  .map-wrapper { background: var(--off-white); border: 1px solid var(--accent-light); border-radius: 16px; padding: 1rem; margin: 1.5rem auto 0 auto; max-width: 500px; overflow: hidden; }
+  .map-svg-wrap { max-width: 600px; margin: 0 auto; position: relative; }
+  .pulse-ring { animation: pulseRing 2.5s ease infinite; transform-origin: center; }
+  @keyframes pulseRing { 0% { opacity: 0.8; r: 8; } 100% { opacity: 0; r: 22; } }
+  .map-legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.25rem; justify-content: center; }
+  .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-dark); font-weight: 600; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .contact-section { background: var(--off-white); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-top: 3rem; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+  .contact-icon { width: 40px; height: 40px; border-radius: 8px; background: var(--white); border: 1px solid var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .contact-icon svg { width: 18px; height: 18px; stroke: var(--accent); fill: none; stroke-width: 1.5; }
+  .contact-item-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px; font-weight: 600; }
+  .contact-item-val { font-size: 0.95rem; color: var(--text-dark); font-weight: 600; }
+  .map-embed { border-radius: 12px; overflow: hidden; border: 1px solid var(--gray-light); height: 420px; width: 100%; }
+  .map-embed iframe { width: 100%; height: 100%; border: none; display: block; }
+  .contact-form { background: var(--white); border: 1px solid var(--accent-light); border-radius: 16px; padding: 2rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-group label { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+  .form-group input, .form-group textarea, .form-group select { background: var(--white); border: 1px solid var(--gray-light); border-radius: 8px; padding: 0.75rem 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: var(--text-dark); outline: none; transition: border-color 0.2s; font-weight: 500; }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--accent); }
+  .btn-submit { width: 100%; padding: 0.875rem; background: var(--accent); color: white; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 800; cursor: pointer; transition: background 0.2s, transform 0.15s; margin-top: 0.5rem; }
+  footer { background: #001a2e; border-top: 1px solid var(--accent-light); padding: 3rem 2rem 2rem; color: #e0e0e0; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .footer-brand p { font-size: 0.82rem; color: #aaa; line-height: 1.8; margin-top: 1rem; max-width: 280px; font-weight: 500; }
+  .footer-col h5 { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #aaa; margin-bottom: 1rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col ul a { font-size: 0.82rem; color: #ccc; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+  .footer-col ul a:hover { color: var(--accent-light); }
+  .footer-bottom { border-top: 1px solid #003a5c; padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-copy { font-size: 0.75rem; color: #888; font-weight: 500; }
+  .footer-certs { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .footer-cert { font-size: 0.7rem; padding: 0.2rem 0.6rem; border: 1px solid #003a5c; border-radius: 4px; color: #aaa; font-weight: 600; }
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  @media (max-width: 900px) {
+    .about-grid, .contact-grid, .grade-result { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .quality-metrics { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .hero-title { font-size: clamp(2.5rem, 8vw, 4rem); }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+   @media (max-width: 600px) {
+     .products-grid { grid-template-columns: 1fr; }
+     .gallery-grid { grid-template-columns: 1fr; }
+     .quality-metrics { grid-template-columns: repeat(2, 1fr); }
+     .footer-top { grid-template-columns: 1fr; }
+     .hero { height: auto; min-height: 100vh; display: flex; align-items: flex-start; }
+     .hero-bg-image { background-attachment: scroll; }
+     .hero-stats { flex-direction: column; gap: 1.25rem; margin-top: 3rem; width: 100%; }
+     .hero-title br { display: none; }
+     .hero-title { font-size: clamp(2.2rem, 10vw, 2.8rem); line-height: 1.1; }
+     .hero-content { padding: 100px 1.25rem 60px; width: 100%; }
+     .nav-inner { padding: 0 1.25rem; }
+     .hero-btns { flex-direction: column; gap: 0.75rem; width: 100%; }
+     .btn-primary, .btn-outline { width: 100%; justify-content: center; text-align: center; }
+     .logo-text { font-size: 1.1rem; }
+     .logo-sub { font-size: 0.55rem; }
+     .logo-icon { width: 30px; height: 30px; }
+     .logo-icon svg { width: 16px; height: 16px; }
+     section { padding: 4rem 1.25rem; }
+   }
+</style>
 </head>
 <body>
 
-<!-- TICKER -->
-<div class="ticker" style="margin-top:68px;">
-  <div class="ticker-inner">
-    <span class="ticker-item"><i class="fa-solid fa-bolt"></i> Grand Offer – First Month at ₹999</span>
-    <span class="ticker-item"><i class="fa-solid fa-star"></i> Free Diet Consultation with Annual Plans</span>
-    <span class="ticker-item"><i class="fa-solid fa-dumbbell"></i> Personal Training Slots Available</span>
-    <span class="ticker-item"><i class="fa-solid fa-fire"></i> Open 5:30 AM – Salem's Earliest Gym</span>
-    <span class="ticker-item"><i class="fa-solid fa-bolt"></i> Grand Offer – First Month at ₹999</span>
-    <span class="ticker-item"><i class="fa-solid fa-star"></i> Free Diet Consultation with Annual Plans</span>
-    <span class="ticker-item"><i class="fa-solid fa-dumbbell"></i> Personal Training Slots Available</span>
-    <span class="ticker-item"><i class="fa-solid fa-fire"></i> Open 5:30 AM – Salem's Earliest Gym</span>
-  </div>
+<div class="mobile-dropdown" id="mobileDropdown">
+  <a href="#about" onclick="toggleMobileMenu()">About</a>
+  <a href="#products" onclick="toggleMobileMenu()">Products</a>
+  <a href="#grade-selector" onclick="toggleMobileMenu()">Grade Selector</a>
+  <a href="#quality" onclick="toggleMobileMenu()">Quality</a>
+  <a href="#logistics" onclick="toggleMobileMenu()">Logistics</a>
+  <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
 </div>
 
-<!-- NAVBAR -->
 <nav id="navbar">
-  <a href="#home" class="nav-logo">Level<span>next</span></a>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#packages">Packages</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Join Now</a>
-  <button id="menu-toggle" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-inner">
+    <a href="#" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/></svg></div><div><div class="logo-text">Maharaja MSM</div><div class="logo-sub">Salt Manufacturer · Vallioor</div></div></a>
+    <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#products">Products</a></li><li><a href="#grade-selector">Grade Selector</a></li><li><a href="#quality">Quality</a></li><li><a href="#logistics">Logistics</a></li><li><a href="#contact">Contact</a></li></ul>
+    <a href="tel:9787636261" class="nav-cta">Bulk Orders</a>
+    <div class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+  </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<nav id="mobile-menu">
-  <a href="#home" onclick="closeMobile()">Home</a>
-  <a href="#packages" onclick="closeMobile()">Packages</a>
-  <a href="#about" onclick="closeMobile()">About</a>
-  <a href="#reviews" onclick="closeMobile()">Reviews</a>
-  <a href="#contact" onclick="closeMobile()">Contact</a>
-  <a href="#contact" onclick="closeMobile()" style="color: var(--accent); border-bottom:none;">→ Join Now</a>
-</nav>
-
-<!-- HERO -->
-<section id="home">
-  <div class="hero-image-side">
-    <div class="hero-img-placeholder">
-      <div class="hero-img-icon">
-        <i class="fa-solid fa-dumbbell"></i>
-        <p class="hero-img-label">High-Intensity Training</p>
-      </div>
-    </div>
-    <div class="hero-diagonal"></div>
-    <div class="hero-badge">
-      <i class="fa-solid fa-shield-halved"></i>
-      <div>
-        <div class="hero-badge-text">Premium Facility</div>
-        <div class="hero-badge-sub">AC + Steam Bath + Locker</div>
-      </div>
-    </div>
+<section class="hero" id="home">
+  <div class="hero-bg-image"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Premier Salt Manufacturer · Est. Vallioor, Tamil Nadu</p>
+    <h1 class="hero-title">Purity<br>in Every<br><em>Grain.</em></h1>
+    <p class="hero-tagline">Industrial-grade excellence. Nature's finest mineral.</p>
+    <div class="hero-btns"><a href="#contact" class="btn-primary">Request Bulk Order</a><a href="#products" class="btn-outline">View Product Catalog</a></div>
+    <div class="hero-stats"><div><div class="hero-stat-num">99.5%</div><div class="hero-stat-label">NaCl Purity</div></div><div><div class="hero-stat-num">4+</div><div class="hero-stat-label">Certifications</div></div><div><div class="hero-stat-num">Pan-India</div><div class="hero-stat-label">Distribution</div></div></div>
   </div>
-
-  <div class="hero-content-side">
-    <div>
-      <p class="hero-eyebrow animate-up">Maravaneri, Salem</p>
-      <h1 class="hero-headline animate-up delay-1">
-        Push Past<br>
-        <span class="outline-text">Every</span><br>
-        <span class="accent">Limit.</span>
-      </h1>
-      <p class="hero-sub animate-up delay-2">
-        Salem's most advanced fitness facility in Maravaneri. Expert coaches, premium equipment, and a community that drives results you can actually see.
-      </p>
-      <div class="hero-actions animate-up delay-3">
-        <a href="#contact" class="btn-primary">
-          <i class="fa-solid fa-arrow-right"></i> Join Now
-        </a>
-        <a href="#packages" class="btn-ghost">
-          <i class="fa-solid fa-eye"></i> View Plans
-        </a>
-      </div>
-      <div class="hero-stats animate-up delay-4">
-        <div>
-          <div class="stat-num">500+</div>
-          <div class="stat-label">Active Members</div>
-        </div>
-        <div>
-          <div class="stat-num">8+</div>
-          <div class="stat-label">Expert Trainers</div>
-        </div>
-        <div>
-          <div class="stat-num">5★</div>
-          <div class="stat-label">Google Rating</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </section>
 
-<!-- ABOUT / WHY US -->
-<section id="about" class="section-pad">
-  <div class="container">
-    <p class="section-tag">Why Levelnext</p>
-    <h2 class="section-title">Built for <span class="accent">Serious</span> Athletes</h2>
-    <p style="color:var(--muted); font-size:0.92rem; margin-top:0.8rem; max-width:520px; line-height:1.7;">
-      We've engineered every corner of Levelnext Fitness so you have zero excuses — only progress.
-    </p>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-dumbbell"></i></div>
-        <div class="feature-title">Premium Equipment</div>
-        <div class="feature-desc">Top-grade Olympic barbells, cable systems, cardio machines, and functional training zones.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-person-running"></i></div>
-        <div class="feature-title">Expert Trainers</div>
-        <div class="feature-desc">Certified coaches with experience in bodybuilding, weight loss, and functional fitness.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
-        <div class="feature-title">Diet & Nutrition</div>
-        <div class="feature-desc">Personalised diet plans crafted by in-house nutrition experts to fuel your goals.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-water"></i></div>
-        <div class="feature-title">Steam Bath</div>
-        <div class="feature-desc">Post-workout steam sessions to accelerate muscle recovery and deep relaxation.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
-        <div class="feature-title">Secure Lockers</div>
-        <div class="feature-desc">Personal locker access to keep your gear safe every session, every day.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-sun"></i></div>
-        <div class="feature-title">Early Hours</div>
-        <div class="feature-desc">Doors open at 5:30 AM — Salem's earliest gym, built around your schedule.</div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="about-section" id="about"><div class="container"><div class="about-grid"><div class="reveal"><p class="section-label">Our Process</p><h2 class="section-title">Refined Through Precision Science</h2><p class="section-body">At Maharaja MSM, every grain undergoes rigorous multi-stage refinement — from solar-evaporated brine to food-safe, chemically pure finished product.</p><div class="process-steps"><div class="process-step"><span class="step-num">01</span><div class="step-content"><h4>Solar Evaporation & Harvesting</h4><p>Seawater channeled into evaporation pans, solar concentration, peak salinity harvest.</p></div></div><div class="process-step"><span class="step-num">02</span><div class="step-content"><h4>Washing & Centrifugal Purification</h4><p>Removal of impurities, magnesium compounds.</p></div></div><div class="process-step"><span class="step-num">03</span><div class="step-content"><h4>Drying & Moisture Control</h4><p>Rotary dryers reduce moisture to <0.1%, free-flowing crystals.</p></div></div><div class="process-step"><span class="step-num">04</span><div class="step-content"><h4>Iodization & Anti-Caking</h4><p>Potassium iodate per FSSAI norms.</p></div></div></div></div><div class="reveal"><p class="section-label">Key Specs</p><h2 class="section-title">Built for Industry Demand</h2><div class="features-grid"><div class="feature-card"><div class="feature-icon"></div><h4>Moisture ≤ 0.1%</h4><p>Zero clumping in tropical storage.</p></div><div class="feature-card"><div class="feature-icon"></div><h4>99.5% NaCl Purity</h4><p>Pharmaceutical & food-grade.</p></div><div class="feature-card"><div class="feature-icon"></div><h4>Iodine Fortified</h4><p>30 ppm KIO₃, WHO norms.</p></div><div class="feature-card"><div class="feature-icon"></div><h4>Free-Flowing</h4><p>Anti-caking treated.</p></div></div></div></div></div></section>
 
-<!-- PACKAGES -->
-<section id="packages" class="section-pad">
-  <div class="container">
-    <p class="section-tag">Membership Plans</p>
-    <h2 class="section-title">Choose Your <span class="accent">Package</span></h2>
-    <p style="color:var(--muted); font-size:0.9rem; margin-top:0.8rem;">
-      <i class="fa-solid fa-circle-info" style="color:var(--accent); margin-right:0.4rem;"></i>
-      Hover over any plan for a Quick Look at what's included.
-    </p>
+<!-- PRODUCTS SECTION WITH RELIABLE SALT IMAGES (Unsplash) -->
+<section class="products-section" id="products"><div class="container"><div class="reveal" style="text-align:center;"><p class="section-label">Product Range</p><h2 class="section-title">Salt for Every Application</h2><p class="section-body" style="margin:0 auto;">Fine table grade to coarse industrial — full spectrum of purity.</p></div><div class="products-grid reveal"><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1621315892013-f32af7358947?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UmVmaW5lZCUyMElvZGl6ZWQlMjBTYWx0fGVufDB8fDB8fHww" alt="Fine refined white salt crystals close-up" loading="lazy" onerror="this.src='https://picsum.photos/seed/refinedsalt/600/400'"><div class="product-card-body"><h3>Refined Iodized Salt</h3><p>Premium food-grade, fine granules, FSSAI certified. Ideal for packaged food, bakery, daily cooking.</p><div class="product-tags"><span class="product-tag">Food Grade</span><span class="product-tag">Iodized</span><span class="product-tag">0.3–0.5mm</span></div></div></div><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1648664531013-5d1d18532328?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEluZHVzdHJpYWwlMjBDb2Fyc2UlMjBTYWx0fGVufDB8fDB8fHww" alt="Industrial coarse bulk salt export pile" loading="lazy" onerror="this.src='https://picsum.photos/seed/industrialsalt/600/400'"><div class="product-card-body"><h3>Industrial Coarse Salt</h3><p>High-purity NaCl, coarse granulation for chemical, water treatment, de-icing. Bulk supply.</p><div class="product-tags"><span class="product-tag">Industrial</span><span class="product-tag">1–4mm</span><span class="product-tag">Bulk</span></div></div></div><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1629608699947-521164bf57f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fFNvbGFyJTIwRXZhcG9yYXRlZCUyMFNlYSUyMFNhbHR8ZW58MHx8MHx8fDA%3D" alt="Solar evaporated sea salt pans aerial view" loading="lazy" onerror="this.src='https://picsum.photos/seed/seasalt/600/400'"><div class="product-card-body"><h3>Solar Evaporated Sea Salt</h3><p>Natural sea salt, trace minerals. Gourmet and nutraceutical grade.</p><div class="product-tags"><span class="product-tag">Natural</span><span class="product-tag">Gourmet</span><span class="product-tag">Trace Minerals</span></div></div></div></div></div></section>
 
-    <div class="pricing-grid">
+<!-- SALT GALLERY SECTION WITH ATTRACTIVE IMAGES -->
+<section class="salt-gallery"><div class="container"><div class="reveal"><p class="section-label">Visual Purity</p><h2 class="section-title">The Crystal Gallery</h2><p class="section-body" style="margin-bottom: 1rem;">Witness the brilliance of Maharaja MSM salt — from pristine pans to premium packaging.</p></div><div class="gallery-grid reveal"><div class="gallery-item"><img class="gallery-img" src="https://images.unsplash.com/photo-1673158190416-014a4ef78f14?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHVsdHJhLXB1cmUlMjBjcnlzdGFsc3xlbnwwfHwwfHx8MA%3D%3D" alt="White salt crystals macro close-up export quality" loading="lazy" onerror="this.src='https://picsum.photos/seed/crystals/600/450'"><div class="gallery-caption">Ultra-Pure Crystals</div></div><div class="gallery-item"><img class="gallery-img" src="https://images.unsplash.com/photo-1605493725784-56a51a8e5c79?w=600&h=450&fit=crop&auto=format" alt="Bulk salt export warehouse loading" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1719902572368-4a7f5fb64b7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QnVsayUyMEV4cG9ydCUyMFJlYWR5fGVufDB8fDB8fHww'"><div class="gallery-caption">Bulk Export Ready</div></div><div class="gallery-item"><img class="gallery-img" src="https://images.unsplash.com/photo-1770850697752-24787a889b4d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fE9jZWFuJTIwSGFydmVzdGVkfGVufDB8fDB8fHww" alt="Sea ocean salt harvesting coastal" loading="lazy" onerror="this.src='https://picsum.photos/seed/foodsalt/600/450'"><div class="gallery-caption"> Ocean Harvested</div></div><div class="gallery-item"><img class="gallery-img" src="https://media.istockphoto.com/id/1367560032/photo/aerial-view-of-a-large-solar-farm-in-california.webp?a=1&b=1&s=612x612&w=0&k=20&c=LF-DeDrOD121cAnZw7ligzKabTNYP6y5s7BGQMabkks=" alt="Aerial view solar salt evaporation pans Vallioor" loading="lazy" onerror="this.src='https://picsum.photos/seed/solarpans/600/450'"><div class="gallery-caption">Solar Pans · Vallioor</div></div></div></div></section>
 
-      <!-- Monthly -->
-      <div class="pricing-card">
-        <div class="plan-name">Monthly</div>
-        <div class="plan-price"><sup>₹</sup>1,499<span>/mo</span></div>
-        <p class="plan-desc">Perfect for beginners. Flexible, no commitment required.</p>
-        <ul class="plan-perks">
-          <li><i class="fa-solid fa-check"></i> Full Gym Access</li>
-          <li><i class="fa-solid fa-check"></i> Locker Access</li>
-          <li><i class="fa-solid fa-check"></i> Group Classes</li>
-          <li class="inactive"><i class="fa-solid fa-xmark"></i> Steam Bath</li>
-          <li class="inactive"><i class="fa-solid fa-xmark"></i> Diet Plan</li>
-          <li class="inactive"><i class="fa-solid fa-xmark"></i> Personal Trainer</li>
-        </ul>
-        <a href="#contact" class="plan-btn plan-btn-outline">Get Started</a>
+<section class="selector-section" id="grade-selector"><div class="container"><div class="reveal"><p class="section-label">Interactive Tool</p><h2 class="section-title">Find Your Ideal Salt Grade</h2><p class="section-body">Select your industry below for instant recommendation.</p><div class="industry-tabs"><button class="industry-tab active" onclick="selectIndustry('food', this)">Food Processing</button><button class="industry-tab" onclick="selectIndustry('chemical', this)"> Chemical</button><button class="industry-tab" onclick="selectIndustry('domestic', this)"> Domestic</button><button class="industry-tab" onclick="selectIndustry('deicing', this)"> De-icing</button></div><div class="grade-result" id="gradeResult"></div></div></div></section>
 
-        <div class="quick-look">
-          <div class="quick-look-title"><i class="fa-solid fa-bolt"></i> Quick Look</div>
-          <ul>
-            <li><i class="fa-solid fa-check-circle"></i> Full Gym Access (6 days/week)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Personal Locker</li>
-            <li><i class="fa-solid fa-check-circle"></i> Group Fitness Classes</li>
-            <li><i class="fa-solid fa-check-circle"></i> Cardio Zone Access</li>
-            <li class="unavailable"><i class="fa-solid fa-circle-xmark"></i> Steam Bath</li>
-            <li class="unavailable"><i class="fa-solid fa-circle-xmark"></i> Diet Consultation</li>
-          </ul>
-        </div>
-      </div>
+<section class="quality-section" id="quality"><div class="container"><div class="reveal"><p class="section-label">Certifications</p><h2 class="section-title">Quality You Can Verify</h2><p class="section-body">ISO, FSSAI, Halal, NABL accredited.</p></div><div class="trust-bar reveal"><div class="cert-card"><div class="cert-logo">ISO</div><div><div class="cert-name">ISO 9001:2015</div><div class="cert-sub">Quality Management</div></div><a href="#" class="cert-dl" onclick="return false;">↓ Certificate</a></div><div class="cert-card"><div class="cert-logo">FSSAI</div><div><div class="cert-name">FSSAI Licensed</div><div class="cert-sub">Food Safety</div></div><a href="#" class="cert-dl" onclick="return false;">↓ License</a></div><div class="cert-card"><div class="cert-logo">HALAL</div><div><div class="cert-name">Halal Certified</div><div class="cert-sub">International Halal</div></div><a href="#" class="cert-dl" onclick="return false;">↓ Certificate</a></div><div class="cert-card"><div class="cert-logo">NABL</div><div><div class="cert-name">NABL Lab Reports</div><div class="cert-sub">Accredited Testing</div></div><a href="#" class="cert-dl" onclick="return false;">↓ Reports</a></div></div><div class="quality-metrics reveal"><div class="metric-card"><div class="metric-num">99.5<span class="metric-unit">%</span></div><div class="metric-label">NaCl Purity</div></div><div class="metric-card"><div class="metric-num">≤0.1<span class="metric-unit">%</span></div><div class="metric-label">Moisture</div></div><div class="metric-card"><div class="metric-num">30<span class="metric-unit">ppm</span></div><div class="metric-label">Iodine</div></div><div class="metric-card"><div class="metric-num">ND</div><div class="metric-label">Heavy Metals</div></div></div></div></section>
 
-      <!-- Annual (Featured) -->
-      <div class="pricing-card featured">
-        <div class="badge-best">Best Value</div>
-        <div class="plan-name">Annual</div>
-        <div class="plan-price"><sup>₹</sup>9,999<span>/yr</span></div>
-        <p class="plan-desc">Our most popular plan. Save over 44% vs monthly billing.</p>
-        <ul class="plan-perks">
-          <li><i class="fa-solid fa-check"></i> Full Gym Access</li>
-          <li><i class="fa-solid fa-check"></i> Locker Access</li>
-          <li><i class="fa-solid fa-check"></i> Group Classes</li>
-          <li><i class="fa-solid fa-check"></i> Steam Bath</li>
-          <li><i class="fa-solid fa-check"></i> Diet Plan</li>
-          <li class="inactive"><i class="fa-solid fa-xmark"></i> Personal Trainer</li>
-        </ul>
-        <a href="#contact" class="plan-btn plan-btn-filled">Join Annual</a>
+<section class="logistics-section" id="logistics"><div class="container"><div class="reveal"><p class="section-label">Distribution</p><h2 class="section-title">Sourced in Vallioor. Delivered Across India.</h2><p class="section-body">Integrated logistics, bulk transport to Tamil Nadu and nationwide.</p></div><div class="map-wrapper reveal"><div class="map-svg-wrap"><svg viewBox="0 0 700 520" width="100%" style="display:block;max-height:220px;"><path d="M200,60 L280,50 L360,55 L420,70 L460,100 L490,130 L510,170 L520,210 L510,250 L500,290 L490,330 L470,370 L440,400 L400,430 L360,460 L320,480 L290,490 L270,480 L250,460 L230,440 L200,410 L170,380 L155,350 L140,320 L130,280 L125,240 L130,200 L140,165 L155,130 L170,100 L185,80 Z" fill="#e6f9ff" stroke="#00c5ff" stroke-width="1.5"/><path d="M230,390 L250,370 L270,360 L295,355 L320,358 L340,370 L355,390 L360,415 L345,440 L320,465 L295,478 L270,470 L250,450 L235,430 L225,410 Z" fill="#b3eeff" stroke="#00c5ff"/><line x1="305" y1="430" x2="370" y2="195" stroke="#00c5ff" stroke-width="2" stroke-dasharray="6,4"/><line x1="305" y1="430" x2="285" y2="395" stroke="#00c5ff" stroke-width="2" stroke-dasharray="6,4"/><line x1="305" y1="430" x2="225" y2="355" stroke="#00c5ff" stroke-width="2" stroke-dasharray="6,4"/><circle cx="370" cy="195" r="8" fill="#00c5ff"/><text x="385" y="199" font-family="DM Sans" font-size="11" fill="#0a2030" font-weight="bold">Chennai</text><circle cx="285" cy="395" r="7" fill="#00c5ff"/><text x="255" y="385" fill="#0a2030" font-weight="bold">Madurai</text><circle cx="225" cy="355" r="7" fill="#00c5ff"/><text x="165" y="350" fill="#0a2030" font-weight="bold">Coimbatore</text><circle cx="310" cy="310" r="7" fill="#00c5ff"/><text x="320" y="308" fill="#0a2030" font-weight="bold">Bengaluru</text><circle cx="195" cy="245" r="7" fill="#00c5ff"/><text x="145" y="243" fill="#0a2030" font-weight="bold">Mumbai</text><circle cx="305" cy="430" r="12" fill="#00c5ff"/><circle cx="305" cy="430" r="20" fill="none" stroke="#00c5ff" stroke-width="2" opacity="0.5" class="pulse-ring"/><text x="305" y="456" font-family="DM Sans" font-size="12" fill="#00c5ff" font-weight="800" text-anchor="middle">Vallioor HQ</text></svg></div><div class="map-legend"><div class="legend-item"><div class="legend-dot" style="background:#00c5ff;"></div> Vallioor Origin</div><div class="legend-item"><div class="legend-dot" style="background:#00c5ff;"></div> Pan-India Delivery</div></div></div></div></section>
 
-        <div class="quick-look">
-          <div class="quick-look-title"><i class="fa-solid fa-bolt"></i> Quick Look</div>
-          <ul>
-            <li><i class="fa-solid fa-check-circle"></i> Full Gym Access (7 days/week)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Personal Locker</li>
-            <li><i class="fa-solid fa-check-circle"></i> All Group Classes</li>
-            <li><i class="fa-solid fa-check-circle"></i> Steam Bath (unlimited)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Personalised Diet Plan</li>
-            <li><i class="fa-solid fa-check-circle"></i> Fitness Assessment</li>
-          </ul>
-        </div>
-      </div>
+<section class="contact-section" id="contact"><div class="container"><p class="section-label">Get in Touch</p><h2 class="section-title">Let's Talk Bulk Supply</h2><div class="contact-grid reveal"><div><div class="contact-info"><div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><div class="contact-item-label">Factory Address</div><div class="contact-item-val">Vallioor, Tamil Nadu, India</div></div></div><div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 9.86 19.79 19.79 0 01.79 1.18 2 2 0 012.73 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.87-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.92z"/></svg></div><div><div class="contact-item-label">Direct Line</div><div class="contact-item-val"><a href="tel:9787636261">+91 97876 36261</a></div></div></div><div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" ry="2"/><polyline points="2 6.5 12 13.5 22 6.5"/></svg></div><div><div class="contact-item-label">Email</div><div class="contact-item-val"><a href="mailto:maharajamsm@gmail.com">maharajamsm@gmail.com</a></div></div></div></div><div class="map-embed" style="margin-top:1.5rem;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.0!2d77.6277!3d8.3766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVallioor!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy"></iframe></div></div><div><div class="contact-form"><h3 style="font-family:'DM Sans',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">Request a Quote</h3><div class="form-row"><div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"></div><div class="form-group"><label>Company</label><input type="text" placeholder="Company name"></div></div><div class="form-row"><div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div><div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com"></div></div><div class="form-group" style="margin-bottom:1rem;"><label>Product Interest</label><select><option>Refined Iodized Salt</option><option>Industrial Coarse Salt</option><option>Solar Evaporated Sea Salt</option><option>Custom Specification</option></select></div><div class="form-group" style="margin-bottom:1rem;"><label>Monthly Volume (MT)</label><input type="text" placeholder="e.g. 50 MT"></div><div class="form-group" style="margin-bottom:1.25rem;"><label>Requirements</label><textarea placeholder="Grain size, packaging, certifications..."></textarea></div><button class="btn-submit" onclick="submitForm(this)">Send Inquiry</button></div></div></div></div></section>
 
-      <!-- Personal Training -->
-      <div class="pricing-card">
-        <div class="plan-name">Personal Training</div>
-        <div class="plan-price"><sup>₹</sup>4,999<span>/mo</span></div>
-        <p class="plan-desc">1-on-1 coaching tailored to your exact fitness goals.</p>
-        <ul class="plan-perks">
-          <li><i class="fa-solid fa-check"></i> Full Gym Access</li>
-          <li><i class="fa-solid fa-check"></i> Locker Access</li>
-          <li><i class="fa-solid fa-check"></i> Group Classes</li>
-          <li><i class="fa-solid fa-check"></i> Steam Bath</li>
-          <li><i class="fa-solid fa-check"></i> Diet Plan</li>
-          <li><i class="fa-solid fa-check"></i> 1-on-1 Trainer</li>
-        </ul>
-        <a href="#contact" class="plan-btn plan-btn-outline">Book a Trainer</a>
-
-        <div class="quick-look">
-          <div class="quick-look-title"><i class="fa-solid fa-bolt"></i> Quick Look</div>
-          <ul>
-            <li><i class="fa-solid fa-check-circle"></i> Full Gym Access (7 days/week)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Personal Locker</li>
-            <li><i class="fa-solid fa-check-circle"></i> Steam Bath (unlimited)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Custom Diet Plan</li>
-            <li><i class="fa-solid fa-check-circle"></i> 12 PT Sessions/month</li>
-            <li><i class="fa-solid fa-check-circle"></i> Progress Tracking</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews" class="section-pad">
-  <div class="container">
-    <p class="section-tag">Member Stories</p>
-    <h2 class="section-title">Real <span class="accent">Results.</span> Real People.</h2>
-  </div>
-  <div class="reviews-track-wrapper" style="margin-top:3rem;">
-    <div class="reviews-track">
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Best gym in Salem by far. The equipment is top-notch and trainers genuinely care about your progress. Lost 12 kg in 4 months!"</p>
-        <div class="review-author">
-          <div class="review-avatar">AK</div>
-          <div><div class="review-name">Arjun Kumar</div><div class="review-meta">Weight Loss · 4 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"The annual plan is incredible value. Steam bath after every session is a game changer. My recovery has improved so much."</p>
-        <div class="review-author">
-          <div class="review-avatar">PL</div>
-          <div><div class="review-name">Priya Lakshmi</div><div class="review-meta">Annual Member · 8 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Personal training at Levelnext is unmatched. My trainer built a custom program that helped me gain 8 kg of muscle in 6 months."</p>
-        <div class="review-author">
-          <div class="review-avatar">SR</div>
-          <div><div class="review-name">Siddharth Raj</div><div class="review-meta">Personal Training · 6 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Finally a gym that opens at 5:30 AM! I can work out before office and the diet plan keeps me on track the whole day."</p>
-        <div class="review-author">
-          <div class="review-avatar">MN</div>
-          <div><div class="review-name">Meena Nair</div><div class="review-meta">Annual Member · 1 year</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Clean facility, great AC, and trainers who know their stuff. Completed my first fitness competition after joining Levelnext!"</p>
-        <div class="review-author">
-          <div class="review-avatar">VK</div>
-          <div><div class="review-name">Vijay Karthi</div><div class="review-meta">Competition Prep · 10 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"The locker facility and steam bath make the experience so premium. Worth every rupee of the annual membership."</p>
-        <div class="review-author">
-          <div class="review-avatar">RP</div>
-          <div><div class="review-name">Rekha Priya</div><div class="review-meta">Annual Member · 5 months</div></div>
-        </div>
-      </div>
-      <!-- Duplicate for seamless loop -->
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Best gym in Salem by far. The equipment is top-notch and trainers genuinely care about your progress. Lost 12 kg in 4 months!"</p>
-        <div class="review-author">
-          <div class="review-avatar">AK</div>
-          <div><div class="review-name">Arjun Kumar</div><div class="review-meta">Weight Loss · 4 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"The annual plan is incredible value. Steam bath after every session is a game changer. My recovery has improved so much."</p>
-        <div class="review-author">
-          <div class="review-avatar">PL</div>
-          <div><div class="review-name">Priya Lakshmi</div><div class="review-meta">Annual Member · 8 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Personal training at Levelnext is unmatched. My trainer built a custom program that helped me gain 8 kg of muscle in 6 months."</p>
-        <div class="review-author">
-          <div class="review-avatar">SR</div>
-          <div><div class="review-name">Siddharth Raj</div><div class="review-meta">Personal Training · 6 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Finally a gym that opens at 5:30 AM! I can work out before office and the diet plan keeps me on track the whole day."</p>
-        <div class="review-author">
-          <div class="review-avatar">MN</div>
-          <div><div class="review-name">Meena Nair</div><div class="review-meta">Annual Member · 1 year</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Clean facility, great AC, and trainers who know their stuff. Completed my first fitness competition after joining Levelnext!"</p>
-        <div class="review-author">
-          <div class="review-avatar">VK</div>
-          <div><div class="review-name">Vijay Karthi</div><div class="review-meta">Competition Prep · 10 months</div></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"The locker facility and steam bath make the experience so premium. Worth every rupee of the annual membership."</p>
-        <div class="review-author">
-          <div class="review-avatar">RP</div>
-          <div><div class="review-name">Rekha Priya</div><div class="review-meta">Annual Member · 5 months</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section-pad">
-  <div class="container">
-    <p class="section-tag">Get In Touch</p>
-    <h2 class="section-title">Start Your <span class="accent">Journey</span> Today</h2>
-
-    <div class="contact-grid">
-      <div>
-        <div class="contact-info-item">
-          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <div>
-            <div class="contact-label">Address</div>
-            <div class="contact-value">
-              1/2, 1st Cross St, Maravaneri<br>
-              Salem, Tamil Nadu – 636 009
-            </div>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-          <div>
-            <div class="contact-label">Phone</div>
-            <div class="contact-value">
-              <a href="tel:+919894529205">098945 29205</a>
-            </div>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
-          <div>
-            <div class="contact-label">Hours</div>
-            <div class="contact-value">
-              Mon–Sat: 5:30 AM – 10:00 PM<br>
-              Sunday: 7:00 AM – 12:00 PM
-            </div>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
-          <div>
-            <div class="contact-label">Follow Us</div>
-            <div class="contact-value">
-              <a href="#">@levelnextfitness</a>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top:1.5rem; background:var(--bg3); border:1px solid var(--glass-border); border-radius:12px; overflow:hidden; height:200px; display:flex; align-items:center; justify-content:center; position:relative;">
-          <div style="text-align:center; z-index:1;">
-            <i class="fa-solid fa-map-pin" style="font-size:2rem; color:var(--accent); display:block; margin-bottom:0.5rem;"></i>
-            <p style="font-family:'DM Sans',sans-serif; font-size:0.75rem; font-weight:700; color:var(--muted);">Maravaneri, Salem</p>
-            <a href="https://maps.google.com/?q=Maravaneri+Salem" target="_blank" style="font-size:0.72rem; color:var(--accent); text-decoration:none; margin-top:0.3rem; display:block;">Open in Google Maps →</a>
-          </div>
-          <div style="position:absolute; inset:0; background: repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(255,255,255,0.02) 30px, rgba(255,255,255,0.02) 31px), repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(255,255,255,0.02) 30px, rgba(255,255,255,0.02) 31px);"></div>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <div class="form-title">Book a Free Trial Session</div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" placeholder="Arjun" />
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" placeholder="Kumar" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="+91 98765 43210" />
-        </div>
-        <div class="form-group">
-          <label>Email (optional)</label>
-          <input type="email" placeholder="you@example.com" />
-        </div>
-        <div class="form-group">
-          <label>Interested In</label>
-          <select>
-            <option value="">Select a plan…</option>
-            <option>Monthly Membership</option>
-            <option>Annual Membership</option>
-            <option>Personal Training</option>
-            <option>Just Exploring</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Your Goal</label>
-          <textarea placeholder="E.g. Lose weight, build muscle, improve stamina…"></textarea>
-        </div>
-        <button class="btn-primary" style="width:100%; justify-content:center; font-size:0.85rem;" onclick="handleFormSubmit(event)">
-          <i class="fa-solid fa-paper-plane"></i> Send Message
-        </button>
-        <p style="font-size:0.72rem; color:var(--muted); margin-top:0.8rem; text-align:center;">
-          Or call us directly: <a href="tel:+919894529205" style="color:var(--accent); text-decoration:none;">098945 29205</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <div class="footer-brand-name">Level<span>next</span> Fitness</div>
-      <p class="footer-desc">Salem's premium fitness destination in Maravaneri. We exist to push you to your next level — every single day.</p>
-      <div class="footer-social">
-        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="tel:+919894529205" class="social-icon" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Quick Links</div>
-      <ul class="footer-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Gym Hours</div>
-      <div class="footer-hours-item"><span>Mon – Fri</span><span>5:30 AM – 10 PM</span></div>
-      <div class="footer-hours-item"><span>Saturday</span><span>5:30 AM – 10 PM</span></div>
-      <div class="footer-hours-item"><span>Sunday</span><span>7:00 AM – 12 PM</span></div>
-      <div style="margin-top:1.2rem; padding: 0.8rem 1rem; background:rgba(100, 255, 218, 0.07); border:1px solid rgba(100, 255, 218, 0.2); border-radius:8px;">
-        <div style="font-family:'DM Sans',sans-serif; font-size:0.72rem; font-weight:700; color:var(--accent); margin-bottom:0.2rem;"> Find Us</div>
-        <div style="font-size:0.78rem; color:#999; line-height:1.5;">1/2, 1st Cross St,<br>Maravaneri, Salem – 636 009</div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Levelnext Fitness. All rights reserved.</p>
-    <p class="footer-copy">Designed for champions in Maravaneri, Salem.</p>
-  </div>
-</footer>
+<footer><div class="footer-inner"><div class="footer-top"><div class="footer-brand"><a href="#" class="logo" style="margin-bottom:0.5rem;"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/></svg></div><div><div class="logo-text" style="color:white;">Maharaja MSM</div><div class="logo-sub" style="color:#aaa;">Salt Manufacturer · Vallioor</div></div></a><p>Delivering purity and industrial-grade quality from Tamil Nadu to industries across India.</p></div><div class="footer-col"><h5>Products</h5><ul><li><a href="#products">Refined Iodized Salt</a></li><li><a href="#products">Industrial Coarse Salt</a></li><li><a href="#products">Solar Sea Salt</a></li><li><a href="#grade-selector">Grade Selector</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="#about">About</a></li><li><a href="#quality">Quality</a></li><li><a href="#logistics">Logistics</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:9787636261">+91 97876 36261</a></li><li><a href="mailto:maharajamsm@gmail.com">maharajamsm@gmail.com</a></li><li><a href="#contact">Thirunelveli, Tamil Nadu</a></li></ul></div></div><div class="footer-bottom"><div class="footer-copy">© 2025 Maharaja MSM. All rights reserved.</div><div class="footer-certs"><span class="footer-cert">ISO 9001</span><span class="footer-cert">FSSAI</span><span class="footer-cert">HALAL</span><span class="footer-cert">NABL</span></div></div></div></footer>
 
 <script>
-  const toggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  toggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-  });
-  function closeMobile() {
-    mobileMenu.classList.remove('open');
-  }
-
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if (window.scrollY > 60) {
-      nav.style.background = 'rgba(10, 25, 47, 0.92)';
-    } else {
-      nav.style.background = 'rgba(10, 25, 47, 0.85)';
-    }
-  });
-
-  function handleFormSubmit(e) {
-    e.preventDefault();
-    const btn = e.target;
-    btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
-    btn.style.background = '#22c55e';
+  const gradeData = {
+    food: { industry: "Food Processing", grade: "Fine Food Grade (FF-01)", grain: "0.3 – 0.8 mm", cols: [
+      { title: "Recommended Grade", items: ["Fine granulation (0.3–0.8mm)", "NaCl ≥ 99.5%", "Moisture ≤ 0.05%", "Iodized @ 30 ppm", "Anti-caking treated", "FSSAI & Halal certified"] },
+      { title: "Applications", items: ["Packaged food", "Bakery & confectionery", "Dairy processing", "Snacks", "Cured meats", "Ready-to-eat"] },
+      { title: "Packaging", items: ["25 kg HDPE bags", "50 kg woven sacks", "500 kg jumbo bags", "1 MT bulk bags", "Custom labeling", "FCL containers"] }
+    ] },
+    chemical: { industry: "Chemical Industry", grade: "Technical Grade (TG-02)", grain: "1.0 – 3.0 mm", cols: [
+      { title: "Recommended Grade", items: ["Coarse granulation (1–3mm)", "NaCl ≥ 99.0%", "Moisture ≤ 0.1%", "Non-iodized", "Low sulfate", "Chlor-alkali compliant"] },
+      { title: "Applications", items: ["Chlor-alkali", "Soda ash", "Water softening", "Textile dyeing", "Pulp & paper", "Electrochemical"] },
+      { title: "Packaging", items: ["1 MT bulk bags", "Loose bulk trucks", "FCL containers", "Tanker transport", "Railcar", "Dedicated fleet"] }
+    ] },
+    domestic: { industry: "Domestic Use", grade: "Premium Table Grade (PT-01)", grain: "0.1 – 0.5 mm", cols: [
+      { title: "Recommended Grade", items: ["Extra fine (0.1–0.5mm)", "NaCl ≥ 99.7%", "Moisture ≤ 0.03%", "Double iodized", "Enhanced anti-caking", "Crystal white"] },
+      { title: "Applications", items: ["Household consumption", "Retail packs", "Salt shakers", "Cooking", "HORECA", "Institutional"] },
+      { title: "Packaging", items: ["1 kg pouches", "2 kg packs", "5 kg family packs", "Private label OEM", "Dispenser packs", "Export quality"] }
+    ] },
+    deicing: { industry: "De-icing", grade: "Rock Salt Grade (RS-03)", grain: "4.0 – 10.0 mm", cols: [
+      { title: "Recommended Grade", items: ["Coarse rock (4–10mm)", "NaCl ≥ 96.0%", "Minimal processing", "High bulk density", "Rapid brine", "Infrastructure-safe"] },
+      { title: "Applications", items: ["Road de-icing", "Airport runways", "Pavement safety", "Bridge ice control", "Industrial refrigeration", "Cold storage"] },
+      { title: "Packaging", items: ["25 kg woven bags", "1 MT jumbo bags", "Loose bulk trucks", "Seasonal stockpiles", "Municipal supply", "Emergency dispatch"] }
+    ] }
+  };
+  function selectIndustry(key, btn) {
+    document.querySelectorAll('.industry-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    const d = gradeData[key];
+    const result = document.getElementById('gradeResult');
+    result.style.opacity = '0';
     setTimeout(() => {
-      btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-      btn.style.background = '';
-    }, 3000);
+      result.innerHTML = `<div class="grade-col"><div style="margin-bottom:1rem;"><div style="font-size:0.7rem;letter-spacing:0.15em;color:#666;">Selected Industry</div><div style="font-size:1rem;color:#111;font-weight:700;">${d.industry}</div><span class="grade-badge">${d.grade}</span><span class="grade-badge" style="margin-left:0.5rem;">${d.grain}</span></div><h3>${d.cols[0].title}</h3><ul>${d.cols[0].items.map(i=>`<li>${i}</li>`).join('')}</ul></div><div class="grade-col"><h3>${d.cols[1].title}</h3><ul>${d.cols[1].items.map(i=>`<li>${i}</li>`).join('')}</ul></div><div class="grade-col"><h3>${d.cols[2].title}</h3><ul>${d.cols[2].items.map(i=>`<li>${i}</li>`).join('')}</ul><div style="margin-top:1.5rem;"><a href="#contact" class="btn-primary" style="display:inline-flex;font-size:0.82rem;padding:0.6rem 1.25rem;">Request This Grade </a></div></div>`;
+      result.style.opacity = '1';
+    }, 200);
   }
-
-  const animateEls = document.querySelectorAll('.feature-card, .pricing-card, .contact-info-item');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        entry.target.style.animation = `fadeUp 0.6s ease ${i * 0.08}s forwards`;
-        entry.target.style.opacity = '0';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  animateEls.forEach(el => observer.observe(el));
+  selectIndustry('food', document.querySelector('.industry-tab'));
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => { entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 80); observer.unobserve(entry.target); } }); }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+  window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40));
+  function toggleMobileMenu() {
+    document.getElementById('mobileDropdown').classList.toggle('open');
+  }
+  function submitForm(btn) {
+    const form = btn.closest('.contact-form');
+    const name = form.querySelector('input[placeholder="Your name"]').value || 'Not provided';
+    const company = form.querySelector('input[placeholder="Company name"]').value || 'Not provided';
+    const phone = form.querySelector('input[type="tel"]').value || 'Not provided';
+    const email = form.querySelector('input[type="email"]').value || 'Not provided';
+    const product = form.querySelector('select').value || 'Not provided';
+    const volume = form.querySelector('input[placeholder="e.g. 50 MT"]').value || 'Not provided';
+    const req = form.querySelector('textarea').value || 'Not provided';
+    const msg = `*Salt Export Enquiry – Maharaja MSM*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Company:* ${encodeURIComponent(company)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Product:* ${encodeURIComponent(product)}%0A*Volume:* ${encodeURIComponent(volume)}%0A*Requirements:* ${encodeURIComponent(req)}`;
+    window.open(`https://wa.me/919787636261?text=${msg}`, '_blank');
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => { const target = document.querySelector(a.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); if (document.getElementById('mobileDropdown').classList.contains('open')) toggleMobileMenu(); } }));
 </script>
 </body>
 </html>
